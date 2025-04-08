@@ -22,6 +22,7 @@ let saveData = () => {
     blockData.ticket_text_part_1 = document.getElementById('ticket_text_part_1').value;
     blockData.ticket_text_part_2 = document.getElementById('ticket_text_part_2').value;
     blockData.start_date = document.getElementById('start_date').value;
+    blockData.start_time = document.getElementById('start_time').value;
     blockData.valid_duration = document.getElementById('valid_duration').value;
     blockData.target_de = document.getElementById('target_de').value;
 
@@ -66,6 +67,7 @@ let saveData = () => {
         content += 'set @ticket_text_part_1 = "' + blockData.ticket_text_part_1 + '" ';
         content += 'set @ticket_text_part_2 = "' + blockData.ticket_text_part_2 + '" ';
         content += 'set @CP_start_date = "' + blockData.start_date + '" ';
+        content += 'set @CP_start_time = "' + blockData.start_time + '" ';
         content += 'set @CP_valid_duration = "' + blockData.valid_duration + '" ';
         content += 'set @targetDE = "' + blockData.target_de + '" ';
 
@@ -173,6 +175,7 @@ let fetchData = () => {
             document.getElementById('ticket_text_part_1').value = blockData.ticket_text_part_1;
             document.getElementById('ticket_text_part_2').value = blockData.ticket_text_part_2;
             document.getElementById('start_date').value = blockData.start_date;
+            document.getElementById('start_time').value = blockData.start_time;
             document.getElementById('valid_duration').value = blockData.valid_duration;
             document.getElementById('target_de').value = blockData.target_de;
 
